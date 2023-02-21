@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+    font-family: SquadaOne-Regular;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color:aqua;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+
+.container div {
+   background-color: black;
+   color: aqua;
+padding: 10px;
+border-radius: 2px;
+flex-direction: row;
+text-align: center;
+}
+
+nav {
+    background-color: aqua;
+    color: black;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    text-align: center;
+    display: inline-block;
+}
+
+header {
+    background-color: black;
+    color: aqua;
+    width: 100%;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0px;
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    background-image: url(images/1236423.jpeg);
+    height: 155px;
+}
+
+footer {
+    background-color: black;
+    color: aqua;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0px;
+    display: flex;
+    text-align: center;
+    display: inline-block;
+    background-image: url(images/1236423.jpeg);
+    height: 110px;
+}
+
+.box-1 {
+    flex: 1;
+    flex-grow: 2;
+    order: 2;
+}
+
+.box-2 {
+    flex: 1;
+    flex-grow: 2;
+    order: 3
+}
+
+.box-3 {
+    flex: 1;
+    flex-grow: 2;
+    order: 1;
+}
+
+.buttons {
+    color: black;
+    text-decoration: none;
+    background: aqua;
+    padding: 10px 17px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.buttons:hover {
+background: rgb(116, 255, 255);
+}
+
+@media screen and (max-width: 700px) {
+ .container {
+ flex-direction: column;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        flex-direction: row;
+    }
+}
